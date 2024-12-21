@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --primary-color: #8a79f0;
+    --primary-color-dark: #2a2e40;
+    --text-dark: #221e36;
+    --text-light: #767268;
+    --extra-light: #f1f2ff;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.section__container {
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+
+.section__header {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    line-height: 3.25rem;
+    text-align: center;
+}
+
+.section__description {
+    color: var(--text-light);
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.btn {
+    padding: 0.70rem 1.4rem;
+    outline: none;
+    font-size: 1rem;
+    border: none;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 0.3rem;
+    transition: 0.4s;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.btn:hover {
+    background: var(--primary-color-dark);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    max-width: 50px;
+}
+
+.logo span{
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-style: italic;
+    color: var(--white);
+    white-space: nowrap;
+}
+
+img{
+    display: flex;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+ul{
+    list-style: none;
+}
+
+html, body{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Roboto", "Poppins", sans-serif;
+}
+
+header{
+    background: linear-gradient(to bottom, rgb(138, 121, 240, 0), rgb(138, 121, 240, 0.1));
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav__header{
+    padding: .75rem 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color-dark);
+}
+
+.nav__logo .logo-dark{
+    display: none;
+}
+
+.nav__menu__btn{
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav__links{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--primary-color-dark);
+    transition: transform 0.3s;
+    z-index: -1;
+}
+
+.nav__links.open{
+    transform: translateY(100%);
+}
+
+.nav__links a{
+    color: var(--white);
+}
+
+.nav__links a:hover{
+    color: var(--primary-color);
+}
+
+.nav__btns{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

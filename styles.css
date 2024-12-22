@@ -249,10 +249,206 @@ nav {
     padding: 12px 17px;
 }
 
+.about__container .section__description {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.about__grid {
+    display: grid;
+    gap: 2rem 1rem;
+}
+
+.about__cart {
+    max-width: 300px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.about__cart span {
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    padding: 1rem 20px;
+    border-radius: 1.25rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about__cart:nth-child(1) span {
+    color: #8a79f0;
+    background-color: #eeebfd;
+}
+
+.about__cart:nth-child(2) span {
+    color: #fba55b;
+    background-color: #fff2e8;
+}
+
+.about__cart:nth-child(3) span {
+    color: #ee6a6f;
+    background-color: #fde9ea;
+}
+
+.about__cart h4 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.about__cart p {
+    color: var(--text-light);
+    line-height: 1.5rem;
+}
+
+.deals {
+    background-color: var(--extra-light);
+}
+
+.section__container .section__description {
+    max-width: 600px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.deals__tabs {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.deals__tabs .btn {
+    font-weight: 600;
+    color: var(--primary-color-dark);
+    background-color: var(--white);
+}
+
+.deals__tabs .btn.active {
+    color: var(--white);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.deals__container .tab__content {
+    display: none;
+    gap: 1rem;
+    animation: fadeEffect 1s;
+}
+
+.deals__container .tab__content.active {
+    display: grid;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.deals__cart {
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.deals__cart img {
+    margin-bottom: 1rem;
+}
+
+.deals__rating {
+    margin-bottom: 1rem;
+    color: goldenrod;
+}
+
+.deals__rating span:last-child {
+    color: var(--text-light);
+}
+
+.deals__cart h4 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.deals__cart__grid {
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.deals__cart__grid div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.deals__cart__grid div span {
+    font-size: 1.2rem;
+}
+
+.deals__cart__footer {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.deals__cart__footer h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+.deals__cart__footer h3 span {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--text-light);
+}
+
+.deals__cart__footer a {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.deals__cart__footer a:hover {
+    color: var(--primary-color-dark);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
 
 
 
 
+
+
+
+/* ---------------------- */
+@media (width > 540px) {
+    .about__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .deals__container .tab__content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+}
+
+/* --------      -------- */
 @media (width > 768px) {
     nav {
         position: static;
@@ -350,11 +546,33 @@ nav {
         text-align: left;
     }
 
-    .header__form form{
+    .header__form form {
         padding: 1.5rem;
         transform: translateY(-50%);
     }
 
+    .about__container {
+        padding-top: 3rem;
+    }
+
+    .about__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .deals__container .tab__content {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 
+
+}
+/* -------------- */
+@media (width > 1024){
+    .deals__container .tab__content{
+        gap: 1.5rem;
+    }
+
+    .deals__cart{
+        padding: 1.5rem;
+    }
 }

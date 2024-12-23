@@ -110,3 +110,9 @@ ScrollReveal().reveal(".subscribe__content .section__description", {
 ScrollReveal().reveal(".subscribe__content form", {
     delay: 1500,
 });
+
+const swiper = new Swiper(".swiper", {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    loop: true,
+});
